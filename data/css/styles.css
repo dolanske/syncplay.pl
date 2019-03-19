@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+}
+html * {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  outline: none;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  /* max-width: 1920px; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+body > h1 {
+  position: absolute;
+  left: -10000px;
+}
+.screenReaderElement {
+  position: absolute;
+  left: -10000px;
+}
+.container {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+  margin-left: auto;
+  margin-right: auto;
+  width: 1420px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container:before {
+  content: "";
+  display: table;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+b {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+/* Využití v případě lightbox.js https://github.com/lokesh/lightbox2/ */
+/* Využití v případě Bootstrap modal */
+/* Využití v případě knihovny select2 */
+/* Využití v případě swipe.js */
+input[type=radio] {
+  display: none;
+}
+input[type=checkbox] {
+  display: none;
+}
+.form-wide {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  width: 100%;
+}
+.form-wide:before {
+  content: "";
+  display: table;
+}
+.form-wide:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-side {
+  display: block;
+  width: 50%;
+  float: left;
+}
+.form-side:nth-child(1) {
+  padding-right: 10px;
+}
+.form-side:nth-child(2) {
+  padding-left: 10px;
+}
+.form-side:only-child {
+  width: 100%;
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+  clear: both;
+}
+/*
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+     display: none; <- Crashes Chrome on hover 
+    -webkit-appearance: none;
+    margin: 0;  <-- Apparently some margin are still there even though it's hidden 
+}
+*/
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently*/
+}
+header {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 60px 0;
+  background: transparent;
+  animation: 0.5s ease-out 0s 1 hslide1;
+}
+header .logo {
+  display: table;
+  float: left;
+}
+header .logo .logo-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/logo-orange.svg");
+}
+header .logo span {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 15px;
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+header .menu {
+  display: table;
+  float: right;
+  height: 64px;
+}
+header .menu .btn {
+  display: table-cell;
+  vertical-align: middle;
+}
+header .menu .menu-open {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: table-cell;
+  color: #ffffff;
+  font-size: 2rem;
+  height: 64px;
+  text-align: center;
+  width: 64px;
+  border: 2px solid #ffffff;
+  vertical-align: middle;
+}
+@keyframes slide1 {
+  0% {
+    margin-right: -50px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+@keyframes slide2 {
+  0% {
+    margin-left: -150px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    margin-left: 25px;
+    opacity: 1;
+  }
+}
+@keyframes slide3 {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 100px;
+  }
+}
+@keyframes slide4 {
+  0%,
+  75% {
+    right: 50%;
+    left: 50%;
+  }
+  100% {
+    right: 35%;
+    left: 35%;
+  }
+}
+.sec-intro {
+  display: block;
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 0;
+  -webkit-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
+}
+.sec-intro .intro-filter {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.35) 100%);
+}
+.sec-intro .intro-filter .content {
+  padding-top: 25%;
+  text-align: center;
+}
+.sec-intro .intro-filter .content h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 15rem;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 0;
+  animation: 1.5s ease-in-out 0s 1 slide1;
+}
+.sec-intro .intro-filter .content h2:after {
+  content: "";
+  display: inline-block;
+  margin-left: 25px;
+  animation: 1.5s ease-in-out 0s 1 slide2;
+  width: 120px;
+  height: 120px;
+  margin-bottom: -25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/logo-orange.svg);
+}
+.sec-intro .intro-filter .content h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+.sec-intro .intro-filter .content h3 strong {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.sec-intro .intro-filter .content .fade {
+  display: block;
+  position: relative;
+  margin-top: 100px;
+  animation: 2s ease-in-out 0s 1 slide3;
+}
+.sec-intro .intro-filter .content .fade:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -45px;
+  right: 35%;
+  left: 35%;
+  height: 3px;
+  background-color: #ffffff;
+  animation: 2.5s ease-in-out 0s 1 slide4;
+}
+.sec-intro .intro-filter .content span {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  display: block;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.button {
+  display: block;
+  text-align: center;
+}
+.button .btn {
+  display: inline-block;
+  height: unset;
+}
+.btn {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  display: block;
+  font-size: 1.8rem;
+  padding: 15px 30px;
+}
+.btn.btn-orange {
+  color: #ffffff;
+  background: #ffb20f;
+  background: linear-gradient(130deg, #ffb20f 0%, #ff2d5e 100%);
+}
+.btn.btn-orange span {
+  vertical-align: middle;
+}
+.btn.btn-orange i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: 0.2s all ease-in-out;
+}
+.sec-percs {
+  display: block;
+  min-height: 800px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 1300px) and (min-width: 0px) {
+  .container {
+    width: 948px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 0px) {
+  .container {
+    width: 748px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  .container {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

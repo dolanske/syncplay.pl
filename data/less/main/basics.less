@@ -1,0 +1,264 @@
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently*/
+}
+
+header {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 60px 0;
+    background: transparent;
+
+    animation: .5s ease-out 0s 1 hslide1;
+
+    .logo {
+        display: table;
+        float: left;
+
+        .logo-img {
+            display: table-cell;
+            vertical-align: middle;
+            width: 64px;
+            height: 64px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url("../img/logo-orange.svg");
+        }
+
+        span {
+            .font-light();
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 15px;
+            font-size: 3.5rem;
+            color: @white;
+        }
+    }
+
+    .menu {
+        display: table;
+        float: right;
+        height: 64px;
+
+        .btn {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .menu-open {
+            .rounded-corners(50%);
+            display: table-cell;
+            color: @white;
+            font-size: 2rem;
+            height: 64px;
+            text-align: center;
+            width: 64px;
+            border: 2px solid @white;
+            vertical-align: middle;
+        }
+    }
+}
+
+@keyframes slide1 {
+    0% {
+        margin-right: -50px;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        margin-left: -150px;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 25px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        opacity: 0;
+        margin-top: 200px;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 100px;
+    }
+}
+
+@keyframes slide4 {
+    0%, 75% {
+        right: 50%;
+        left: 50%;
+
+    }
+
+    100% {
+        right: 35%;
+        left: 35%;
+    }
+}
+.sec-intro {
+    display: block;
+    min-height: 600px;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 0;
+    -webkit-box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.21);
+    box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.21);
+
+    .intro-filter {
+        width: 100%;
+        height: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,.85) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0.35) 100%);
+
+        .content {
+            padding-top: 25%;
+            text-align: center;
+
+            h2 {
+                .font-light();
+                font-size: 15rem;
+                text-align: center;
+                color: @white;
+                margin-right: 0;
+                animation: 1.5s ease-in-out 0s 1 slide1;
+
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    margin-left: 25px;
+                    animation: 1.5s ease-in-out 0s 1 slide2;
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: -25px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url(../img/logo-orange.svg);
+                }
+            }
+
+            h3 {
+                .font-light();
+                color: @white;
+                font-size: 5rem;
+                margin-bottom: 30px;
+
+                strong {
+                    .font-semibold();
+                }
+            }
+
+            .fade {
+                display: block;
+                position: relative;
+                margin-top: 100px;
+                animation: 2s ease-in-out 0s 1 slide3;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: -45px;
+                    right: 35%;
+                    left: 35%;
+                    height: 3px;
+                    background-color: @white;
+                    animation: 2.5s ease-in-out 0s 1 slide4;
+                }
+            }
+
+            span {
+                .font-regular();
+                display: block;
+                color: @white;
+                font-size: 2rem;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+.button {
+    display: block;
+    text-align: center;
+
+    .btn {
+        display: inline-block;
+        height: unset;
+    }
+}
+
+.btn {
+    .rounded-corners(30px);
+    display: block;
+    font-size: 1.8rem;
+    padding: 15px 30px;
+
+    &.btn-orange {
+        color: @white;
+        // height: 45px;
+        background: rgb(255,178,15);
+        background: linear-gradient(130deg, rgba(255,178,15,1) 0%, rgba(255,45,94,1) 100%);
+
+        span {
+            vertical-align: middle;
+        }
+
+        &:hover {
+
+        }
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+            transition: .2s all ease-in-out;
+        }
+    }
+}
+
+.sec-percs {
+    display: block;
+    min-height: 800px;
+    background-color: @white;
+}
