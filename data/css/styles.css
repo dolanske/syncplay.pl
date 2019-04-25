@@ -289,12 +289,13 @@ input[type=number]::-webkit-inner-spin-button {
   /* Non-prefixed version, currently*/
 }
 header {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 60px 0;
-  background: transparent;
+  padding: 20px 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.75);
   animation: 0.5s ease-out 0s 1 hslide1;
 }
 header .logo {
@@ -324,6 +325,7 @@ header .menu {
   display: table;
   float: right;
   height: 64px;
+  position: relative;
 }
 header .menu .btn {
   display: table-cell;
@@ -341,6 +343,18 @@ header .menu .menu-open {
   width: 64px;
   border: 2px solid #ffffff;
   vertical-align: middle;
+}
+header .menu ul {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 200px;
+  background-color: #ffffff;
+}
+header .menu ul li {
+  padding: 10px;
+  text-align: center;
 }
 @keyframes slide1 {
   0% {
@@ -397,12 +411,29 @@ header .menu .menu-open {
   min-height: 600px;
   height: 100vh;
   width: 100%;
+  z-index: 200;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top 0;
   -webkit-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
   box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
+}
+.sec-intro .tp {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  left: 50%;
+  bottom: 50px;
+  color: #ffffff;
+  text-align: center;
+  transform: translate(-50%, 0);
+  transition: 0.2s all ease-in-out;
+}
+.sec-intro .tp:hover {
+  bottom: 40px;
 }
 .sec-intro .intro-filter {
   width: 100%;
@@ -411,7 +442,7 @@ header .menu .menu-open {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.35) 100%);
 }
 .sec-intro .intro-filter .content {
-  padding-top: 25%;
+  padding-top: 20%;
   text-align: center;
 }
 .sec-intro .intro-filter .content h2 {
@@ -487,6 +518,7 @@ header .menu .menu-open {
   display: block;
   font-size: 1.8rem;
   padding: 15px 30px;
+  transition: 0.2s all ease-in-out;
 }
 .btn.btn-orange {
   color: #ffffff;
@@ -496,16 +528,150 @@ header .menu .menu-open {
 .btn.btn-orange span {
   vertical-align: middle;
 }
+.btn.btn-orange:hover {
+  -webkit-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
+}
 .btn.btn-orange i {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
   transition: 0.2s all ease-in-out;
 }
-.sec-percs {
+.sec-info {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
   display: block;
-  min-height: 800px;
+  background-color: #090c14;
+  height: 100vh;
+}
+.sec-info:before {
+  content: "";
+  display: table;
+}
+.sec-info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sec-info h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  display: block;
+  position: relative;
+  font-size: 6rem;
+  color: #ffffff;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.sec-info h2:after {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6px;
+  width: 75px;
   background-color: #ffffff;
+}
+.sec-info .content-block-imagine {
+  padding-top: 250px;
+  margin-bottom: 250px;
+}
+.sec-info .content-block-imagine p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  padding: 5px 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 3.2rem;
+}
+.sec-info .content-block-imagine p:last-of-type {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.sec-info .content-block-perks h2 {
+  margin-bottom: 25px;
+}
+.sec-info .content-block-perks ul {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  text-align: center;
+}
+.sec-info .content-block-perks ul li {
+  display: inline-block;
+  width: 300px;
+  flex-basis: 300px;
+  color: #ffffff;
+}
+.sec-info .content-block-perks ul li .icon {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+.sec-info .content-block-perks ul li .icon i {
+  background: -webkit-linear-gradient(top left, #ffb20f, #ff2d5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sec-info .content-block-perks ul li h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.dot-list {
+  list-style: none;
+}
+.dot-list li {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  display: block;
+  position: relative;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+.dot-list li:before {
+  content: "";
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+.downloads {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+  display: block;
+  min-height: 600px;
+  height: 100vh;
+  background-color: #090c14;
+}
+.downloads:before {
+  content: "";
+  display: table;
+}
+.downloads:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media screen and (max-width: 1300px) and (min-width: 0px) {
   .container {

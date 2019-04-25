@@ -1,11 +1,9 @@
 
 jQuery(document).ready(function ($) {
-    $(window).on("scroll", function () {
-        var st = $(window).scrollTop();
-        if (st > 600) {
-            $("header").show();
-        } else {
-            $("header").fadeOut(150);
-        }
+
+    $(".menu-open").on("click", function(e){
+        e.preventDefault();
+
+        $(this).next().find("ul").slideToggle(300);
     });
 });

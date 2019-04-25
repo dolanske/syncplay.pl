@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </head>
 <body>
 <h1 class="screenReaderElement">Syncplay</h1>
@@ -28,8 +30,15 @@
             <div class="logo-img"></div>
         </a>
         <div class="menu">
-            <a href="#" class="btn btn-orange"><span>Click to <strong>Download</strong></span></a>
+            <!-- <a href="#" class="btn btn-orange"><span>Click to <strong>Download</strong></span></a> -->
             <a href="#" class="menu-open"><i class="fas fa-bars"></i></a>
+
+            <ul>
+                <li><a href="#"></a>Homepage</li>
+                <li><a href="#"></a>Download</li>
+                <li><a href="#"></a>Contact</li>
+                <li><a href="#"></a>Changelog</li>
+            </ul>
         </div>
     </div>
 </header>
