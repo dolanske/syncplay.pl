@@ -34,10 +34,10 @@
             <a href="#" class="menu-open"><i class="fas fa-bars"></i></a>
 
             <ul>
-                <li><a href="#"></a>Homepage</li>
-                <li><a href="#"></a>Download</li>
-                <li><a href="#"></a>Contact</li>
-                <li><a href="#"></a>Changelog</li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Changelog</a></li>
             </ul>
         </div>
     </div>

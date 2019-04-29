@@ -352,9 +352,15 @@ header .menu ul {
   width: 200px;
   background-color: #ffffff;
 }
-header .menu ul li {
+header .menu ul li a {
+  display: block;
   padding: 10px;
   text-align: center;
+  transition: 0.2s all ease-in-out;
+}
+header .menu ul li:hover a {
+  background: #ffb20f;
+  background: linear-gradient(130deg, rgba(255, 178, 15, 0.1) 0%, rgba(255, 45, 94, 0.1) 100%);
 }
 @keyframes slide1 {
   0% {
@@ -416,9 +422,6 @@ header .menu ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top 0;
-  -webkit-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
-  box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.21);
 }
 .sec-intro .tp {
   display: block;
@@ -433,13 +436,13 @@ header .menu ul li {
   transition: 0.2s all ease-in-out;
 }
 .sec-intro .tp:hover {
-  bottom: 40px;
+  bottom: 45px;
 }
 .sec-intro .intro-filter {
   width: 100%;
   height: 100%;
   background: #000000;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.35) 100%);
+  background: linear-gradient(180deg, rgba(9, 12, 20, 0) 0%, rgba(9, 12, 20, 0.35) 40%, rgba(9, 12, 20, 0.5) 80%, #090c14 100%);
 }
 .sec-intro .intro-filter .content {
   padding-top: 20%;

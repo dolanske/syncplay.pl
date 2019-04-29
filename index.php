@@ -15,10 +15,10 @@
             </div>
         </div>
     </div>
-    <a href="#" class="tp"><i class="fas fa-arrow-down"></i></a>
+    <a href="#tp" class="tp"><i class="fas fa-arrow-down"></i></a>
 </section>
 
-<section class="sec-info">
+<section class="sec-info" id="tp">
     <div class="content-block-imagine">
         <div class="container">
             <h2>Imagine!</h2>
