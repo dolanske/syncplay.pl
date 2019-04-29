@@ -305,8 +305,8 @@ header .logo {
 header .logo .logo-img {
   display: table-cell;
   vertical-align: middle;
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -324,7 +324,7 @@ header .logo span {
 header .menu {
   display: table;
   float: right;
-  height: 64px;
+  height: 44px;
   position: relative;
 }
 header .menu .btn {
@@ -338,11 +338,18 @@ header .menu .menu-open {
   display: table-cell;
   color: #ffffff;
   font-size: 2rem;
-  height: 64px;
+  height: 44px;
   text-align: center;
-  width: 64px;
-  border: 2px solid #ffffff;
+  width: 44px;
   vertical-align: middle;
+  transition: 0.4s all ease-in-out;
+}
+header .menu .menu-open.active {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
 }
 header .menu ul {
   display: none;
@@ -411,6 +418,67 @@ header .menu ul li:hover a {
     right: 35%;
     left: 35%;
   }
+}
+footer {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+footer .footer-filter {
+  width: 100%;
+  height: 100%;
+  background: #090c14;
+  background: linear-gradient(180deg, #090c14 0%, rgba(9, 12, 20, 0.22592787) 30%, rgba(9, 12, 20, 0) 100%);
+}
+footer .footer-content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  justify-content: space-between;
+  text-align: center;
+}
+footer .footer-content-wrap .block {
+  display: block;
+  width: 25%;
+  flex-basis: 25%;
+  text-align: center;
+}
+footer .footer-content-wrap .block .mg {
+  margin-bottom: 15px;
+}
+footer .footer-content-wrap .block ul {
+  list-style: none;
+}
+footer .footer-content-wrap .block ul li {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+footer .footer-content-wrap .block h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+footer .footer-content-wrap .block p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #ffffff;
+  line-height: 1.5em;
+}
+footer .footer-content-wrap .block p a {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #ff2d5e;
+  transition: 0.2s all ease-in-out;
+}
+footer .footer-content-wrap .block p a:hover {
+  filter: brightness(150%);
 }
 .sec-intro {
   display: block;
@@ -523,13 +591,13 @@ header .menu ul li:hover a {
   padding: 15px 30px;
   transition: 0.2s all ease-in-out;
 }
+.btn span {
+  vertical-align: middle;
+}
 .btn.btn-orange {
   color: #ffffff;
   background: #ffb20f;
   background: linear-gradient(130deg, #ffb20f 0%, #ff2d5e 100%);
-}
-.btn.btn-orange span {
-  vertical-align: middle;
 }
 .btn.btn-orange:hover {
   -webkit-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
@@ -542,23 +610,13 @@ header .menu ul li:hover a {
   margin-left: 5px;
   transition: 0.2s all ease-in-out;
 }
-.sec-info {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */
-  display: block;
-  background-color: #090c14;
-  height: 100vh;
+.btn.btn-donate {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #ffb20f;
 }
-.sec-info:before {
-  content: "";
-  display: table;
-}
-.sec-info:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.sec-info h2 {
+.title-line {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   display: block;
@@ -568,7 +626,7 @@ header .menu ul li:hover a {
   padding-bottom: 50px;
   text-align: center;
 }
-.sec-info h2:after {
+.title-line:after {
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -582,11 +640,26 @@ header .menu ul li:hover a {
   width: 75px;
   background-color: #ffffff;
 }
-.sec-info .content-block-imagine {
-  padding-top: 250px;
+.sec-content {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+  display: block;
+  background-color: #090c14;
+}
+.sec-content:before {
+  content: "";
+  display: table;
+}
+.sec-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sec-content .content-block-imagine {
+  padding-top: 200px;
   margin-bottom: 250px;
 }
-.sec-info .content-block-imagine p {
+.sec-content .content-block-imagine p {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   padding: 5px 0;
@@ -594,15 +667,18 @@ header .menu ul li:hover a {
   text-align: center;
   font-size: 3.2rem;
 }
-.sec-info .content-block-imagine p:last-of-type {
+.sec-content .content-block-imagine p:last-of-type {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 2.4rem;
 }
-.sec-info .content-block-perks h2 {
+.sec-content .content-block-perks {
+  margin-bottom: 250px;
+}
+.sec-content .content-block-perks h2 {
   margin-bottom: 25px;
 }
-.sec-info .content-block-perks ul {
+.sec-content .content-block-perks ul {
   display: flex;
   width: 65%;
   margin: auto;
@@ -611,24 +687,24 @@ header .menu ul li:hover a {
   justify-content: space-between;
   text-align: center;
 }
-.sec-info .content-block-perks ul li {
+.sec-content .content-block-perks ul li {
   display: inline-block;
   width: 300px;
   flex-basis: 300px;
   color: #ffffff;
 }
-.sec-info .content-block-perks ul li .icon {
+.sec-content .content-block-perks ul li .icon {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 6rem;
   margin-bottom: 10px;
 }
-.sec-info .content-block-perks ul li .icon i {
+.sec-content .content-block-perks ul li .icon i {
   background: -webkit-linear-gradient(top left, #ffb20f, #ff2d5e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.sec-info .content-block-perks ul li h3 {
+.sec-content .content-block-perks ul li h3 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -675,6 +751,14 @@ header .menu ul li:hover a {
   content: "";
   display: table;
   clear: both;
+}
+.downloads span {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
 }
 @media screen and (max-width: 1300px) and (min-width: 0px) {
   .container {

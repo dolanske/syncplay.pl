@@ -18,10 +18,10 @@
     <a href="#tp" class="tp"><i class="fas fa-arrow-down"></i></a>
 </section>
 
-<section class="sec-info" id="tp">
+<section class="sec-content" id="tp">
     <div class="content-block-imagine">
         <div class="container">
-            <h2>Imagine!</h2>
+            <h2 class="title-line">Imagine!</h2>
             <p>You could play any audio or video file at the exact same time.</p>
             <p>No more delays. No more countdowns. No more stuttering. <strong>And no more quality loss!</strong></p>
         </div>
@@ -29,7 +29,7 @@
 
     <div class="content-block-perks">
         <div class="text-wrap">
-            <h2>Why Syncplay?</h2>
+            <h2 class="title-line">Why Syncplay?</h2>
             <ul>
                 <li>
                     <div class="icon"><i class="fas fa-sync-alt"></i></div>
@@ -54,7 +54,8 @@
 
 <section class="downloads">
     <div class="container">
-
+        <h2 class="title-line">Get started</h2>
+        <span>Choose your operating system:</span>
     </div>
 </section>
 

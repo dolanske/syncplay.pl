@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
     $(".menu-open").on("click", function(e){
         e.preventDefault();
         $(this).next().slideToggle(300);
+        $(this).toggleClass("active");
     });
 
     // Anchor

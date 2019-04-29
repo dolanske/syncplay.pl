@@ -36,8 +36,10 @@
             <ul>
                 <li><a href="#">Homepage</a></li>
                 <li><a href="#">Download</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Support</a></li>
                 <li><a href="#">Changelog</a></li>
+                <li><a href="#">Donate</a></li>
             </ul>
         </div>
     </div>
