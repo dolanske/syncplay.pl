@@ -420,7 +420,7 @@ header .menu ul li:hover a {
   }
 }
 footer {
-  height: 500px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -440,8 +440,9 @@ footer .footer-content-wrap {
 }
 footer .footer-content-wrap .block {
   display: block;
-  width: 25%;
-  flex-basis: 25%;
+  margin: auto;
+  width: 45%;
+  flex-basis: 45%;
   text-align: center;
 }
 footer .footer-content-wrap .block .mg {
@@ -453,9 +454,30 @@ footer .footer-content-wrap .block ul {
 footer .footer-content-wrap .block ul li {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
+  position: relative;
   cursor: pointer;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+footer .footer-content-wrap .block ul li:hover:after {
+  opacity: 1;
+  bottom: -25px;
+}
+footer .footer-content-wrap .block ul li:after {
+  content: "Copy to clipboard";
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px;
+  bottom: -20px;
+  opacity: 0;
+  z-index: 10;
+  width: 150px;
+  background-color: #ff2d5e;
+  transition: 0.3s all ease-in-out;
 }
 footer .footer-content-wrap .block h3 {
   font-family: 'Quicksand', sans-serif;
@@ -594,15 +616,15 @@ footer .footer-content-wrap .block p a:hover {
 .btn span {
   vertical-align: middle;
 }
+.btn:hover {
+  -webkit-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
+}
 .btn.btn-orange {
   color: #ffffff;
   background: #ffb20f;
   background: linear-gradient(130deg, #ffb20f 0%, #ff2d5e 100%);
-}
-.btn.btn-orange:hover {
-  -webkit-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 62px 1px rgba(0, 0, 0, 0.3);
 }
 .btn.btn-orange i {
   display: inline-block;
@@ -759,6 +781,49 @@ footer .footer-content-wrap .block p a:hover {
   text-align: center;
   color: #ffffff;
   font-size: 2rem;
+  margin-bottom: 50px;
+}
+.downloads span:nth-of-type(2) {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+.downloads ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.downloads ul li {
+  display: block;
+  width: 24%;
+  flex-basis: 24%;
+  color: #ffffff;
+  text-align: center;
+}
+.downloads ul li h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+.downloads ul li h3 i {
+  background: -webkit-linear-gradient(top left, #ffb20f, #ff2d5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.downloads .button {
+  margin-bottom: 50px;
+}
+.downloads .button a {
+  color: #ffffff;
+}
+.downloads p {
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+}
+.downloads p strong {
+  color: #ff2d5e;
 }
 @media screen and (max-width: 1300px) and (min-width: 0px) {
   .container {

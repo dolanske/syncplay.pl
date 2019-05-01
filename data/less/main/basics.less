@@ -167,7 +167,7 @@ header {
 }
 
 footer {
-    height: 500px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -176,6 +176,7 @@ footer {
         width: 100%;
         height: 100%;
         background: rgb(9,12,20);
+
         background: linear-gradient(180deg, rgba(9,12,20,1) 0%, rgba(9,12,20,0.22592787114845936) 30%, rgba(9,12,20,0) 100%);
     }
 
@@ -188,8 +189,9 @@ footer {
 
         .block {
             display: block;
-            width: 25%;
-            flex-basis: 25%;
+            margin: auto;
+            width: 45%;
+            flex-basis: 45%;
             text-align: center;
 
             .mg {
@@ -201,9 +203,32 @@ footer {
 
                 li {
                     .font-semibold();
+                    position: relative;
                     cursor: pointer;
                     color: @white;
-                    margin-bottom: 10px;
+                    margin-bottom: 25px;
+
+                    &:hover {
+                        &:after {
+                            opacity: 1;
+                            bottom: -25px;
+                        }
+                    }
+
+                    &:after {
+                        content: "Copy to clipboard";
+                        .rounded-corners(3px);
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        padding: 3px;
+                        bottom: -20px;
+                        opacity: 0;
+                        z-index: 10;
+                        width: 150px;
+                        background-color: @magenta;
+                        transition: .3s all ease-in-out;
+                    }
                 }
             }
 
@@ -214,7 +239,7 @@ footer {
                 margin-bottom: 15px;
             }
 
-            p{
+            p {
                 .font-regular();
                 font-size: 2rem;
                 color: @white;
@@ -359,17 +384,17 @@ footer {
         vertical-align: middle;
     }
 
+    &:hover {
+        -webkit-box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.3);
+        box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.3);
+    }
+
     &.btn-orange {
         color: @white;
         // height: 45px;
         background: rgb(255,178,15);
         background: linear-gradient(130deg, rgba(255,178,15,1) 0%, rgba(255,45,94,1) 100%);
-
-        &:hover {
-            -webkit-box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.3);
-            -moz-box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.3);
-            box-shadow: 0px 2px 62px 1px rgba(0,0,0,0.3);
-        }
 
         i {
             display: inline-block;
@@ -514,5 +539,56 @@ footer {
         text-align: center;
         color: @white;
         font-size: 2rem;
+        margin-bottom: 50px;
+
+        &:nth-of-type(2) {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-around;
+        margin-bottom: 50px;
+
+        li {
+            display: block;
+            width: 24%;
+            flex-basis: 24%;
+            color: @white;
+            text-align: center;
+
+            h3 {
+                .font-semibold();
+                font-size: 3.5rem;
+
+                i {
+                    background: -webkit-linear-gradient(top left, @orange, @magenta);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+
+    .button {
+        margin-bottom: 50px;
+
+        a {
+            color: @white;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: @white;
+        text-align: center;
+
+        strong {
+            color: @magenta;
+        }
     }
 }
