@@ -48,6 +48,7 @@
                     <h3>It's FREE</h3>
                 </li>
             </ul>
+            <p>All you require is an internet connection, a media player and bunch of friends.</p>
         </div>
     </div>
 </section>
@@ -59,19 +60,29 @@
         <ul>
             <li>
                 <h3><i class="fab fa-windows"></i> Windows</h3>
+                <div class="button">
+                    <a href="#" class="btn btn-donate">Windows download</a>
+                </div>
             </li>
             <li>
                 <h3><i class="fab fa-apple"></i> macOS</h3>
+                <div class="button">
+                    <a href="#" class="btn btn-donate">macOS download</a>
+                </div>
             </li>
             <li>
                 <h3><i class="fab fa-linux"></i> Linux</h3>
+                <div class="button">
+                    <a href="#" class="btn btn-donate">Linux download</a>
+                </div>
             </li>
         </ul>
-        <div class="button">
-            <a href="#" class="">View release notes</a>
-        </div>
+
         <span><i class="fas fa-info-circle"></i> Media players <strong>compatible</strong> with Syncplay</span>
         <p>Syncplay works with the following media players: <strong>mpv, MPC-BE, MPC-HC, VLC</strong>. Your standard media player such as Windows Media Player, etc. will not work. <br> We recommend MPV which is already included with your Syncplay installation. </p>
+        <div class="button">
+            <a href="#" class="linkline">View older builds</a>
+        </div>
     </div>
 </section>
 

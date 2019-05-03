@@ -604,6 +604,27 @@ footer .footer-content-wrap .block p a:hover {
   display: inline-block;
   height: unset;
 }
+.button a {
+  display: inline-block;
+}
+a.linkline {
+  position: relative;
+}
+a.linkline:hover:after {
+  bottom: -5px;
+  opacity: 1;
+}
+a.linkline:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 5px;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+  background-color: #ffffff;
+}
 .btn {
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -637,6 +658,11 @@ footer .footer-content-wrap .block p a:hover {
   font-weight: 500;
   color: #ffffff;
   background-color: #ffb20f;
+}
+.btn.btn-donate:hover {
+  -webkit-box-shadow: 0px 2px 25px 1px rgba(255, 178, 15, 0.2);
+  -moz-box-shadow: 0px 2px 25px 1px rgba(255, 178, 15, 0.2);
+  box-shadow: 0px 2px 25px 1px rgba(255, 178, 15, 0.2);
 }
 .title-line {
   font-family: 'Quicksand', sans-serif;
@@ -700,6 +726,14 @@ footer .footer-content-wrap .block p a:hover {
 .sec-content .content-block-perks h2 {
   margin-bottom: 25px;
 }
+.sec-content .content-block-perks p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.6rem;
+}
 .sec-content .content-block-perks ul {
   display: flex;
   width: 65%;
@@ -762,7 +796,7 @@ footer .footer-content-wrap .block p a:hover {
   /* For IE 6/7 (trigger hasLayout) */
   display: block;
   min-height: 600px;
-  height: 100vh;
+  padding-bottom: 150px;
   background-color: #090c14;
 }
 .downloads:before {
@@ -792,7 +826,6 @@ footer .footer-content-wrap .block p a:hover {
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
-  margin-bottom: 50px;
 }
 .downloads ul li {
   display: block;
@@ -804,15 +837,19 @@ footer .footer-content-wrap .block p a:hover {
 .downloads ul li h3 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  margin-bottom: 15px;
 }
 .downloads ul li h3 i {
   background: -webkit-linear-gradient(top left, #ffb20f, #ff2d5e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.downloads ul li .btn.btn-donate {
+  padding: 7px 12px;
+}
 .downloads .button {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .downloads .button a {
   color: #ffffff;
@@ -821,6 +858,7 @@ footer .footer-content-wrap .block p a:hover {
   font-size: 1.6rem;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 50px;
 }
 .downloads p strong {
   color: #ff2d5e;
