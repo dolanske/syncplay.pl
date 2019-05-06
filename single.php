@@ -28,16 +28,23 @@
                     <img src="http://wowslider.com/sliders/demo-23/data1/images/squantzpond209864.jpg" alt="">
                     <h4>Smaller headings doesn't mean bad headings.</h4>
                     <p>Donec faucibus sapien eu ligula pellentesque vulputate. Pellentesque tempus rhoncus diam sit amet aliquam. Nullam vulputate sem quis sagittis suscipit. Etiam sollicitudin cursus venenatis.</p>
+                    <h2>If you want to prove a...point</h2>
+                    <ul>
+                        <li>Custom lists</li>
+                        <li>Isn't that cool?</li>
+                        <li>Psst.. it is</li>
+                    </ul>
+                    <p>That's not all. Where I come from we even have custom numbered lists.</p>
+                    <ol>
+                        <li>Yep we count with everything</li>
+                        <li>Bruh #3</li>
+                    </ol>
+                    <p>Donec faucibus sapien eu ligula pellentesque vulputate. Pellentesque tempus rhoncus diam sit amet aliquam. Nullam vulputate sem quis sagittis suscipit. Etiam sollicitudin cursus venenatis.</p>
+                    <hr>
+                    <h2>Really impressive isn't it?</h2>
+                    <p> Cras pharetra maximus ipsum, in auctor eros mattis eu. Vivamus porttitor vulputate malesuada. Morbi sit amet tortor pulvinar, lacinia felis nec, rhoncus libero.</p>
                 </div>
             </div>
-        </div>
-
-        <div class="more-articles">
-            <div class="container">
-                <h2>Read some more</h2>
-
-            </div>
-
         </div>
 </section>
 

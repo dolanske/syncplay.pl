@@ -666,16 +666,16 @@ a {
         .box {
             display: block;
             float: left;
-            width: 30%;
-            flex-basis: 30%;
+            width: 25%;
+            flex-basis: 25%;
 
             &:first-of-type {
                 padding-top: 25px;
             }
 
             &:last-of-type {
-                width: 70%;
-                flex-basis: 70%;
+                width: 75%;
+                flex-basis: 75%;
             }
 
             .date {
@@ -717,7 +717,7 @@ a {
 
             .excerpt {
                 text-align: left;
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
         }
 
@@ -727,7 +727,6 @@ a {
     .single-article {
         margin-top: 150px;
 
-
         .text-wrap {
             display: block;
             margin: auto;
@@ -735,7 +734,7 @@ a {
 
             padding-bottom: 75px;
             margin-bottom: 75px;
-            border-bottom: 3px solid @white;
+            // border-bottom: 3px solid @white;
 
             h2,
             h3,
@@ -787,10 +786,64 @@ a {
 
             }
 
+            hr {
+                margin: 25px 0;
+                border-color: @magenta;
+            }
+
             img {
                 display: block;
                 width: 100%;
                 margin: 50px 0;
+            }
+
+            ul,
+            ol {
+                .font-semibold();
+                list-style: none;
+
+                li {
+                    list-style: none;
+                    position: relative;
+                    font-size: 1.6rem;
+                    padding-left: 30px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            ul {
+                li {
+                    &:before {
+                        .rounded-corners(50%);
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: @magenta;
+                    }
+                }
+            }
+
+            ol {
+                li {
+                    counter-increment: ol;
+
+                    &:before {
+                        .rounded-corners(50%);
+                        content: counter(ol)". ";
+                        display: block;
+                        font-size: 1.6rem;
+                        width: 8px;
+                        height: 8px;
+                        position: absolute;
+                        left: 3px;
+                        top: 0px;
+                        color: @magenta;
+                    }
+                }
             }
         }
     }

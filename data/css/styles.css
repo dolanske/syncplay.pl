@@ -884,15 +884,15 @@ a.linkline:after {
 .single-content .single-heading .box {
   display: block;
   float: left;
-  width: 30%;
-  flex-basis: 30%;
+  width: 25%;
+  flex-basis: 25%;
 }
 .single-content .single-heading .box:first-of-type {
   padding-top: 25px;
 }
 .single-content .single-heading .box:last-of-type {
-  width: 70%;
-  flex-basis: 70%;
+  width: 75%;
+  flex-basis: 75%;
 }
 .single-content .single-heading .box .date {
   display: block;
@@ -929,7 +929,7 @@ a.linkline:after {
 }
 .single-content .single-heading .box .excerpt {
   text-align: left;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 .single-content .single-article {
   margin-top: 150px;
@@ -940,7 +940,6 @@ a.linkline:after {
   color: #ffffff;
   padding-bottom: 75px;
   margin-bottom: 75px;
-  border-bottom: 3px solid #ffffff;
 }
 .single-content .single-article .text-wrap h2,
 .single-content .single-article .text-wrap h3,
@@ -984,10 +983,58 @@ a.linkline:after {
 .single-content .single-article .text-wrap a:hover {
   filter: brightness(150%);
 }
+.single-content .single-article .text-wrap hr {
+  margin: 25px 0;
+  border-color: #ff2d5e;
+}
 .single-content .single-article .text-wrap img {
   display: block;
   width: 100%;
   margin: 50px 0;
+}
+.single-content .single-article .text-wrap ul,
+.single-content .single-article .text-wrap ol {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  list-style: none;
+}
+.single-content .single-article .text-wrap ul li,
+.single-content .single-article .text-wrap ol li {
+  list-style: none;
+  position: relative;
+  font-size: 1.6rem;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+.single-content .single-article .text-wrap ul li:before {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff2d5e;
+}
+.single-content .single-article .text-wrap ol li {
+  counter-increment: ol;
+}
+.single-content .single-article .text-wrap ol li:before {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  content: counter(ol) ". ";
+  display: block;
+  font-size: 1.6rem;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  color: #ff2d5e;
 }
 @media screen and (max-width: 1300px) and (min-width: 0px) {
   .container {
