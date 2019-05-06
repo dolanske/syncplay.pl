@@ -25,7 +25,7 @@
                     <p> Duis ullamcorper, mi ut mattis congue, lacus mi maximus nisl, ac accumsan neque metus ut nisi. Pellentesque vitae convallis leo, vitae fermentum nisl. Sed a turpis et lectus sollicitudin finibus <a href="#">I am a cool link</a> eu quis risus. Curabitur lectus leo, suscipit eu tempor ac, porta finibus ligula. Nunc et lorem ac lacus efficitur tincidunt. Proin consectetur ac augue in viverra. Nunc vel nunc justo.</p>
                     <h3>And.. nice sized headings.</h3>
                     <p> Cras pharetra maximus ipsum, in auctor eros mattis eu. Vivamus porttitor vulputate malesuada. Morbi sit amet tortor pulvinar, lacinia felis nec, rhoncus libero.</p>
-                    <img src="http://wowslider.com/sliders/demo-23/data1/images/squantzpond209864.jpg" alt="">
+                    <img src="http://wowslider.com/sliders/demo-23/data1/images/squantzpond209864.jpg" alt="" />
                     <h4>Smaller headings doesn't mean bad headings.</h4>
                     <p>Donec faucibus sapien eu ligula pellentesque vulputate. Pellentesque tempus rhoncus diam sit amet aliquam. Nullam vulputate sem quis sagittis suscipit. Etiam sollicitudin cursus venenatis.</p>
                     <h2>If you want to prove a...point</h2>
@@ -40,7 +40,7 @@
                         <li>Bruh #3</li>
                     </ol>
                     <p>Donec faucibus sapien eu ligula pellentesque vulputate. Pellentesque tempus rhoncus diam sit amet aliquam. Nullam vulputate sem quis sagittis suscipit. Etiam sollicitudin cursus venenatis.</p>
-                    <hr>
+                    <hr />
                     <h2>Really impressive isn't it?</h2>
                     <p> Cras pharetra maximus ipsum, in auctor eros mattis eu. Vivamus porttitor vulputate malesuada. Morbi sit amet tortor pulvinar, lacinia felis nec, rhoncus libero.</p>
                 </div>
