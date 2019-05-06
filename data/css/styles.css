@@ -863,6 +863,132 @@ a.linkline:after {
 .downloads p strong {
   color: #ff2d5e;
 }
+.single-content {
+  background-color: #090c14;
+  padding-bottom: 100px;
+  color: #ffffff;
+}
+.single-content .container {
+  width: 50%;
+}
+.single-content .single-heading {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.single-content .single-heading .box {
+  display: block;
+  float: left;
+  width: 30%;
+  flex-basis: 30%;
+}
+.single-content .single-heading .box:first-of-type {
+  padding-top: 25px;
+}
+.single-content .single-heading .box:last-of-type {
+  width: 70%;
+  flex-basis: 70%;
+}
+.single-content .single-heading .box .date {
+  display: block;
+  text-align: center;
+}
+.single-content .single-heading .box .author-pic {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: auto;
+}
+.single-content .single-heading .box .author-pic .pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.single-content .single-heading .box .author {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.single-content .single-heading .box .title {
+  text-align: left;
+  font-size: 6rem;
+  margin-bottom: 30px;
+}
+.single-content .single-heading .box .excerpt {
+  text-align: left;
+  font-size: 2.2rem;
+}
+.single-content .single-article {
+  margin-top: 150px;
+}
+.single-content .single-article .text-wrap {
+  display: block;
+  margin: auto;
+  color: #ffffff;
+  padding-bottom: 75px;
+  margin-bottom: 75px;
+  border-bottom: 3px solid #ffffff;
+}
+.single-content .single-article .text-wrap h2,
+.single-content .single-article .text-wrap h3,
+.single-content .single-article .text-wrap h4,
+.single-content .single-article .text-wrap h5,
+.single-content .single-article .text-wrap h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  display: block;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.single-content .single-article .text-wrap h2 {
+  font-size: 4rem;
+}
+.single-content .single-article .text-wrap h3 {
+  font-size: 3.4rem;
+}
+.single-content .single-article .text-wrap h4 {
+  font-size: 3rem;
+}
+.single-content .single-article .text-wrap h5 {
+  font-size: 2.6rem;
+}
+.single-content .single-article .text-wrap h6 {
+  font-size: 2.2rem;
+}
+.single-content .single-article .text-wrap p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  line-height: 1.8em;
+}
+.single-content .single-article .text-wrap a {
+  color: #ff2d5e;
+  transition: 0.2s all ease-in-out;
+}
+.single-content .single-article .text-wrap a:hover {
+  filter: brightness(150%);
+}
+.single-content .single-article .text-wrap img {
+  display: block;
+  width: 100%;
+  margin: 50px 0;
+}
 @media screen and (max-width: 1300px) and (min-width: 0px) {
   .container {
     width: 948px;

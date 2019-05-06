@@ -642,3 +642,156 @@ a {
         }
     }
 }
+
+.single-content {
+    background-color: @gray2;
+
+    padding-bottom: 100px;
+    color: @white;
+
+    .container {
+        width: 50%;
+    }
+
+    .single-heading {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .box {
+            display: block;
+            float: left;
+            width: 30%;
+            flex-basis: 30%;
+
+            &:first-of-type {
+                padding-top: 25px;
+            }
+
+            &:last-of-type {
+                width: 70%;
+                flex-basis: 70%;
+            }
+
+            .date {
+                display: block;
+                text-align: center;
+            }
+
+            .author-pic {
+                .rounded-corners(50%);
+                display: block;
+                width: 120px;
+                height: 120px;
+                background-color: @white;
+                overflow: hidden;
+                margin: auto;
+
+                .pic {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .author {
+                text-align: center;
+                font-size: 4rem;
+                margin-bottom: 10px;
+            }
+
+            .title {
+                text-align: left;
+                font-size: 6rem;
+                margin-bottom: 30px;
+
+            }
+
+            .excerpt {
+                text-align: left;
+                font-size: 2.2rem;
+            }
+        }
+
+
+    }
+
+    .single-article {
+        margin-top: 150px;
+
+
+        .text-wrap {
+            display: block;
+            margin: auto;
+            color: @white;
+
+            padding-bottom: 75px;
+            margin-bottom: 75px;
+            border-bottom: 3px solid @white;
+
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                .font-bold();
+                display: block;
+                text-align: left;
+                color: @white;
+                margin-bottom: 40px;
+            }
+
+            h2 {
+                font-size: 4rem;
+            }
+
+            h3 {
+                font-size: 3.4rem;
+            }
+
+            h4 {
+                font-size: 3rem;
+            }
+
+            h5 {
+                font-size: 2.6rem;
+            }
+
+            h6 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                .font-semibold();
+                display: block;
+                margin-bottom: 25px;
+                font-size: 2rem;
+                line-height: 1.8em;
+            }
+
+            a {
+                color: @magenta;
+                transition: .2s all ease-in-out;
+
+                &:hover {
+                    filter: brightness(150%);
+                }
+
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                margin: 50px 0;
+            }
+        }
+    }
+}
