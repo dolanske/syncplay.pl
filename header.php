@@ -33,7 +33,7 @@
             <!-- <a href="#" class="btn btn-orange"><span>Click to <strong>Download</strong></span></a> -->
             <a href="#" class="menu-open"><i class="fas fa-bars"></i></a>
 
-            <ul>
+            <ul class="menu-list">
                 <li><a href="#">Homepage</a></li>
                 <li><a href="#">Download</a></li>
                 <li><a href="#">News</a></li>
@@ -43,6 +43,7 @@
             </ul>
         </div>
     </div>
+
 </header>
 
 <main role="main">

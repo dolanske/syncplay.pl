@@ -1,12 +1,11 @@
 <?php include("header.php"); ?>
 
 <section class="single-content">
-
         <div class="single-heading" style="background-image: url(data/img/theatre.jpg);">
             <div class="container">
                 <div class="box">
                     <span class="date">18 - 4 - 2019</span>
-                    <h3 class="author">eetoh</h3>
+                    <h3 class="author">etoh</h3>
                     <div class="author-pic">
                         <div class="pic" style="background-image: url(https://i.imgur.com/nwhnRsZ.jpg);"></div>
                     </div>
@@ -23,6 +22,19 @@
                 <div class="text-wrap">
                     <h2>To redesign, one needs courage</h2>
                     <p> Duis ullamcorper, mi ut mattis congue, lacus mi maximus nisl, ac accumsan neque metus ut nisi. Pellentesque vitae convallis leo, vitae fermentum nisl. Sed a turpis et lectus sollicitudin finibus <a href="#">I am a cool link</a> eu quis risus. Curabitur lectus leo, suscipit eu tempor ac, porta finibus ligula. Nunc et lorem ac lacus efficitur tincidunt. Proin consectetur ac augue in viverra. Nunc vel nunc justo.</p>
+                    <pre>
+                        <code>
+var anchor = window.location.hash;
+if (anchor != "") {
+    if ($(anchor).length > 0) {
+        $('html,body').animate({
+            scrollTop: $(anchor).offset().top
+        }, 'slow');
+    }
+}
+                        </code>
+
+                    </pre>
                     <h3>And.. nice sized headings.</h3>
                     <p> Cras pharetra maximus ipsum, in auctor eros mattis eu. Vivamus porttitor vulputate malesuada. Morbi sit amet tortor pulvinar, lacinia felis nec, rhoncus libero.</p>
                     <img src="http://wowslider.com/sliders/demo-23/data1/images/squantzpond209864.jpg" alt="" />
@@ -43,6 +55,9 @@
                     <hr />
                     <h2>Really impressive isn't it?</h2>
                     <p> Cras pharetra maximus ipsum, in auctor eros mattis eu. Vivamus porttitor vulputate malesuada. Morbi sit amet tortor pulvinar, lacinia felis nec, rhoncus libero.</p>
+                    <div class="button">
+                        <a href="#" class="btn btn-donate">YOU</a><a href="#" class="btn btn-donate">can</a><a href="#" class="btn btn-donate">stack</a>
+                    </div>
                 </div>
             </div>
         </div>
