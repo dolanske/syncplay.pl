@@ -1,0 +1,97 @@
+
+
+input[type=radio] { 
+    display: none;
+    &:checked + label {
+       
+    }    
+    &:disabled + label {
+      
+    }
+    &:disabled {
+        &:checked + label {
+            
+        }
+    }
+    & + label {        
+       
+    }
+}
+
+input[type=checkbox] { 
+    display: none;
+    &:checked + label {
+       
+    }    
+    &:disabled + label {
+      
+    }
+    &:disabled {
+        &:checked + label {
+            
+        }
+    }
+    & + label {        
+       
+    }
+}
+
+.form-wide {
+    .clearfix();
+    .border-box();
+    width: 100%;
+}
+
+.form-side {
+    display: block;
+    width: 50%;
+    float: left;
+    &:nth-child(1) {
+        padding-right: 10px;
+    }
+    &:nth-child(2) {
+        padding-left: 10px;
+    }
+    &:only-child {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+        clear: both;
+    }
+}
+
+input[type=text],input[type=password], input[type=email], input[type=tel], input[type=number] {
+    
+}
+
+input[type=number]{
+    //-moz-appearance:textfield;
+}
+
+/*
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+     display: none; <- Crashes Chrome on hover 
+    -webkit-appearance: none;
+    margin: 0;  <-- Apparently some margin are still there even though it's hidden 
+}
+*/
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder  {
+    
+}
+
+button[type=submit], input[type=submit] {
+   
+}
+
+textarea {
+    
+}
+
+select {
+}
+
+select::-ms-expand {
+   // display: none;
+}
