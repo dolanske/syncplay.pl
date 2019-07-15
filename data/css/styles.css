@@ -642,6 +642,7 @@ a.linkline:after {
   -webkit-box-shadow: 0 2px 62px 1px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 2px 62px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 62px 1px rgba(0, 0, 0, 0.3);
+  filter: none !important;
 }
 .btn.btn-orange {
   color: #ffffff;
@@ -653,6 +654,9 @@ a.linkline:after {
   vertical-align: middle;
   margin-left: 5px;
   transition: 0.2s all ease-in-out;
+}
+.btn.btn-orange:hover {
+  box-shadow: 0 3px 6px rgba(255, 178, 15, 0.2);
 }
 .btn.btn-donate {
   font-family: 'Quicksand', sans-serif;
@@ -673,7 +677,7 @@ a.linkline:after {
   font-size: 6rem;
   color: #ffffff;
   padding-bottom: 50px;
-  text-align: center;
+  text-align: center !important;
 }
 .title-line:after {
   border-radius: 3px;
@@ -735,7 +739,7 @@ a.linkline:after {
   text-align: center;
   font-size: 1.6rem;
 }
-.sec-content .content-block-perks ul {
+.sec-content .content-block-perks .perks-ul {
   display: flex;
   width: 65%;
   margin: auto;
@@ -744,24 +748,24 @@ a.linkline:after {
   justify-content: space-between;
   text-align: center;
 }
-.sec-content .content-block-perks ul li {
+.sec-content .content-block-perks .perks-ul li {
   display: inline-block;
   width: 300px;
   flex-basis: 300px;
   color: #ffffff;
 }
-.sec-content .content-block-perks ul li .icon {
+.sec-content .content-block-perks .perks-ul li .icon {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 6rem;
   margin-bottom: 10px;
 }
-.sec-content .content-block-perks ul li .icon i {
+.sec-content .content-block-perks .perks-ul li .icon i {
   background: -webkit-linear-gradient(top left, #ffb20f, #ff2d5e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.sec-content .content-block-perks ul li h3 {
+.sec-content .content-block-perks .perks-ul li h3 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -995,7 +999,7 @@ a.linkline:after {
 .text-wrap .btn {
   color: #ffffff;
 }
-o .text-wrap .btn:hover {
+.text-wrap .btn a:hover {
   filter: none;
 }
 .text-wrap pre > code {
@@ -1102,6 +1106,7 @@ o .text-wrap .btn:hover {
   display: block;
   width: 100%;
   margin-top: 75px;
+  margin-bottom: 150px;
 }
 .posts .post-wrap .post-item {
   border-radius: 8px;
