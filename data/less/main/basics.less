@@ -416,6 +416,7 @@ a {
         -webkit-box-shadow: 0 2px 62px 1px rgba(0,0,0,0.3);
         -moz-box-shadow: 0 2px 62px 1px rgba(0,0,0,0.3);
         box-shadow: 0 2px 62px 1px rgba(0,0,0,0.3);
+        filter: none !important;
     }
 
     &.btn-orange {
@@ -429,6 +430,10 @@ a {
             vertical-align: middle;
             margin-left: 5px;
             transition: 0.2s all ease-in-out;
+        }
+
+        &:hover {
+            box-shadow: 0 3px 6px rgba(255,178,15,.2);
         }
     }
 
@@ -452,7 +457,7 @@ a {
     font-size: 6rem;
     color: @white;
     padding-bottom: 50px;
-    text-align: center;
+    text-align: center !important;
 
     &:after {
         .rounded-corners(3px);
@@ -506,7 +511,7 @@ a {
             font-size: 1.6rem;
         }
 
-        ul {
+        .perks-ul {
             display: flex;
             width: 65%;
             margin: auto;
@@ -920,7 +925,9 @@ a {
         width: 100%;
         margin-top: 75px;
 
-        margin-bottom:150px:.post-item {
+        margin-bottom:150px;
+
+        .post-item {
             .rounded-corners(8px);
             display: block;
             width: 100%;

@@ -34,7 +34,7 @@
                 <li>
                     <div class="icon"><i class="fas fa-sync-alt"></i></div>
                     <h3>Realtime synchronisation</h3>
-                </li>
+                </li>s
                 <li>
                     <div class="icon"><i class="fas fa-star"></i></div>
                     <h3>No quality loss</h3>
