@@ -1,5 +1,5 @@
 # syncplay.pl
-HTML WordPress theme for the Syncplay website.
+HTML theme for the Syncplay website.
 
 
 # Known issues / Stuff to fix on the main branch #
